@@ -1,0 +1,35 @@
+{
+  "name": "@dumy/test",
+  "version": "1.0.0",
+  "description": "dumy migrations",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "lint": "eslint .",
+    "lint-staged": "npm run lint && npm test",
+    "test-watch": "NODE_ENV=test mocha --watch",
+    "test": "NODE_ENV=test mocha --timeout 5000 --recursive  --exit"
+  },
+  "author": "Murtaza Bagwala",
+  "license": "ISC",
+  "dependencies": {
+    "debug": "2.6.9",
+    "dotenv": "8.1.0",
+    "migrate-mongoose": "4.0.0",
+    "mongoose": "5.6.13"
+  },
+  "devDependencies": {
+    "chai": "4.2.0",
+    "chai-http": "4.3.0",
+    "eslint": "6.3.0",
+    "eslint-config-airbnb-base": "14.0.0",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-node": "9.2.0",
+    "husky": "3.0.5",
+    "mocha": "6.2.0",
+    "nodemon": "1.19.1",
+    "prettier": "1.18.2",
+    "faker": "4.1.0",
+    "nock": "11.4.0"
+  }
+}
